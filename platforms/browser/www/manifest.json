@@ -1,0 +1,19 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Agendamiento",
+  "short_name": "Agendamiento",
+  "version": "com.agendamiento",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "author": "Apache Cordova Team",
+  "icons": [
+    {
+      "src": "www/img/logo.jpg",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

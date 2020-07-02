@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Color theme for statusbar -->
+        <meta name="theme-color" content="#2196f3">
+        <!-- Your app title -->
+        <title>Agendamiento</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="css/framework7.bundle.min.css">
+        <!-- Path to your custom app styles-->
+        <link rel="stylesheet" href="css/my-app.css">
+        <script src="js/jquery.js"></script>
+    </head>
+    <body class="cuerpo">
+            <script>
+                    
+                </script>
+        
+        <!-- App root element -->
+        <div id="app">
+
+            <div class="panel panel-left panel-cover panel-resizable " >
+                <div class="block hola" id="myDIV">
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="/usuario/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="fas fa-file-invoice"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Solicitar turno</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="btnPedidosMenu">
+                                <a href="/moduloturnos/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="far fa-calendar-alt"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Historial Turnos</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="btnSessionMenu">
+                                <a href="/perfil/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="fas fa-user-cog"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Editar Perfil</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="btnRegistroMenu">
+                                <a  href="/entidades/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="far fa-building"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Agregar entidad a mi lista</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="btnRegistro">
+                                <a  href="/ultimotikect/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="fas fa-file-invoice"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Ticket</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="btnCerrarSesionMenu">
+                                <a onclick="cerrarSesion()" href="/home/" class="item-link item-content panel-close">
+                                    <div class="item-media"><i class="fas fa-power-off"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Cerrar sesion</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statusbar overlay -->
+            <div class="statusbar"></div>
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="home" class="page">
+                    <!-- Top Navbar -->
+                    
+                    <!-- Bottom Toolbar -->
+                    <!-- Scrollable page content -->
+                    <div class="contenedor_global page-content infinite-scroll-content">
+                        <div class="contenedor_medio ">
+                            <div class="contenedor_img"></div>
+                            <div class="contenedor_login ">
+                                <div class="ico"><div class="iconoagenda"></div></div>
+                                <div class="login">
+                                    <form id="form_login">
+                                        
+                                        <input type="number" id="cedula" class="" placeholder="Cédula" required style="border-radius: 25px;border-style: solid;border-width:  thin;border-color: #bcbcbc;padding-top:10px;padding-bottom: 10px;padding-left: 30px;padding-right: 30px;-webkit-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);-moz-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);margin-bottom: 10%; margin-top: 20%;">
+                                        <input type="password" id="contrasena" class="" placeholder="Contraseña" required style="border-radius: 25px;border-style: solid;border-width:  thin;border-color: #bcbcbc;padding-top:10px;padding-bottom: 10px;padding-left: 30px;padding-right: 30px;-webkit-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);-moz-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);margin-bottom: 10%;">
+                                        
+
+                                        <div class="botones">
+                                            <input type="button" value="Entrar" onclick="DatosLogin()" style="margin-right: 5%;" class="bton ">
+                                            <a href="#" data-popup=".my-popup" class="popup-open"><input type="button" onclick="TraerEmpresas()" value="Registrarse" class="bton"></a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="imtem2Login2boton" style="height: 10%;">
+                                    <a class="" href="#" onclick="RecuperarContrasena()">¿ Olvidaste tu contraseña ?</a>
+                                </div>
+
+                                <!-- And somewhere in DOM -->
+                                <div class="popup my-popup">
+                                <div class="view">
+                                    <div class="page">
+                                    <div class="navbar" style="background-color: #729ECA;">
+                                        <div class="navbar-bg"></div>
+                                        <div class="navbar-inner">
+                                        <div class="title">Registro</div>
+                                        <div class="right">
+                                            <!-- Link to close popup -->
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content contenedor_formulario_registro infinite-scroll-content">
+                                        <form class="FormuRegistro" id="formu_registro">
+
+                                            <div class="list no-hairlines-md  infinite-scroll-content" style="margin-top: 0%;">
+                                                <ul>
+                                                    <li class="item-content item-input item-input-outline">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-floating-label">Nombres</div>
+                                                            <div class="item-input-wrap">
+                                                            <input type="text" placeholder="Tú nombre" required id="nombre">
+                                                            <span class="input-clear-button"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item-content item-input item-input-outline">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-floating-label">Apellidos</div>
+                                                            <div class="item-input-wrap">
+                                                            <input type="text" placeholder="Tú apellidos" required id="apellido">
+                                                            <span class="input-clear-button"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item-content item-input item-input-outline">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-floating-label">Cédula</div>
+                                                            <div class="item-input-wrap">
+                                                            <input type="tel" placeholder="Tú identificacion" required id="cedulaR">
+                                                            <span class="input-clear-button"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item-content item-input item-input-outline">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-floating-label">Correo</div>
+                                                            <div class="item-input-wrap">
+                                                            <input type="email" placeholder="Tú correo electronico" required id="correo">
+                                                            <span class="input-clear-button"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                        <li class="item-content item-input item-input-outline">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-floating-label" >Contraseña</div>
+                                                            <div class="item-input-wrap">
+                                                            <input type="password" placeholder="Tú contraseña" id="contrasenaR">
+                                                            <span class="input-clear-button"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                
+                                            
+                                            Seleccione una entidad
+                                             <!--   <div class="item-inner">
+                                                    <div class="item-input-wrap input-dropdown-wrap">
+                                                    <select placeholder="Please choose..." id="empresas_registro">
+                                                        comente esto
+                                                    </select>
+                                                    </div>
+                                                </div>-->
+                                                <div class="item-content">
+                                                    <select onchange="TraerSede();" name="empresas_registro" id="empresas_registro">
+                                                        <option value="" selected disabled></option>
+                                                    </select>
+                                                </div>
+                                            Seleccione una sede de la entidad
+                                               <!-- <div class="item-inner">
+                                                    <div class="item-input-wrap input-dropdown-wrap">
+                                                    <select placeholder="Please choose..." id="sedes_registro">
+                                                        
+                                                    </select>
+                                                    </div>
+                                                </div>-->
+                                                <div class="item-content">
+                                                    <select name="sedes_registro" id="sedes_registro">
+                                                        <option value="" selected disabled></option>
+                                                    </select>
+                                                </div>
+                                        </ul>
+                                            <div class="form-check" style="margin-bottom: 15px; margin-top: 15px;">
+                                                <input class="form-check-input" type="radio" checked id="terminos">
+                                                <a href="#" data-popup=".my-popup2" class="popup-open"><label class="form-check-label" >Términos y condiciones</label></a>
+                                            </div>
+                                            <div class="botones_login_registro">
+                                                    <button class="col button button-fill btn_cancelar_registro link popup-close" id="cancelar">Cancelar</button>
+                                                <button type="button" class="col button button-fill" onclick="DatosRegistro()" >Registrar</button>
+                                            </div>
+                                        </div>
+                                        </form>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- And somewhere in DOM -->
+                                <div class="popup my-popup2">
+                                        <div class="view">
+                                            <div class="page">
+                                            <div class="navbar" style="background-color: #729ECA;">
+                                                <div class="navbar-bg"></div>
+                                                <div class="navbar-inner">
+                                                <div class="title">Términos y Condiciones</div>
+                                                <div class="right">
+                                                    <!-- Link to close popup -->
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="page-content contenedor_terminos ">
+                                                    <div class="Terminos ">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti accusamus saepe earum aperiam vitae itaque labore, est voluptatibus vel totam optio iure perferendis nihil! Tempora esse illum et distinctio?</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti accusamus saepe earum aperiam vitae itaque labore, est voluptatibus vel totam optio iure perferendis nihil! Tempora esse illum et distinctio?</p>
+                                                    
+                                                    </div>
+                                                    <div class="botones_login_registro">
+                                                        <button class="col button button-fill link popup-close">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+        <!-- Path to your app js-->
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/font-awesome.js"></script>
+
+        
+    
+    </body>
+</html>

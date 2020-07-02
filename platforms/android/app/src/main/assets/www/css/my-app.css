@@ -1,0 +1,544 @@
+
+.contenedor_global{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/fondome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_medio{
+    width: 60vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor_img{
+    width: 100%;
+    height: 15vh;
+    background-image: url("../img/Logo_Magisoft.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contenedor_login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ico{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconoagenda{
+    width: 50%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.login{
+    width: 90%;
+    height: 85%;
+
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.FormuRegistro{
+    width: 90%;
+    height: 95%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+}
+.contenedor_formulario_registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_terminos{
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Terminos{
+    width: 90%;
+    height: 90%;
+
+}
+.bton{
+    cursor: pointer;
+    border-radius: 25px;
+    border-style: solid;
+    border-width:  thin;
+    border-color: #bcbcbc;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);
+    box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.27);
+}
+.botones{
+    margin-bottom: 2%;
+    color: blue;
+    margin-top: 5%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.botones_login_registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+
+    /* background-color: red; */
+}
+.btn_cancelar_registro{
+    width: 90%;
+    margin-right: 5%;
+}
+
+.imtem2Login2boton{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.entidades{
+    display: flex;
+    flex-direction: column;
+}
+/* CSS Solicitar turno ----------------------------------------- */
+.contenedor_global_turno{
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.iconoservicio{
+    width:70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.iconoservi{
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/service.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+.contenedor_entidades{
+    width:70%;
+    height: 60%;
+    
+}
+.servicios{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicios2{
+    width: 90%;
+    height: 90%;
+
+    overflow: scroll;
+}
+.servi{
+    margin-bottom: 5%;
+}
+/* CSS Modulo Perfil --------------------------------------------*/
+
+.contenedor_global_perfil{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_perfil{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_imagen{
+    width: 25%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/EditarPersona2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.contenedor_formulario{
+    width: 100%;
+    height: 100%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.formulario_perfil{
+    
+    width: 80%;
+    height: 100%;
+    display: flex;
+
+}
+.bton_actualizar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen{
+    width: 30%;
+}
+/* CSS Historial Turno -------------------------------------------------------- */
+.contenedor_global_historial{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+th{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+tr{
+    border-bottom: 2px solid black;
+
+}
+.contenedor_historial{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*  */
+
+.tablaCompleta{
+    border-style: solid;
+    border-width:2px 2px 2px 2px;
+    border-color: #b9bbbe;
+    overflow: scroll;
+    background-color: white;
+    /*    display: block;
+        max-height: 360px;
+        overflow-y: auto;
+        -ms-overflow-style: -ms-autohiding-scrollbar;*/
+}
+.my-custom-scrollbarUsuarios::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /*display: none;   Ocultar scroll */
+
+}
+.my-custom-scrollbarUsuarios::-webkit-scrollbar-thumb {
+    /*    background: #0000EE;*/
+    background: rgba(182,210,224,1);
+background: -moz-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182,210,224,1)), color-stop(35%, rgba(131,184,219,1)), color-stop(65%, rgba(114,158,202,1)), color-stop(100%, rgba(120,189,235,1)));
+background: -webkit-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -o-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -ms-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: linear-gradient(to right, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6d2e0', endColorstr='#78bdeb', GradientType=1 );
+}
+.my-custom-scrollbarUsuarios::-webkit-scrollbar-thumb:hover {
+    background: rgba(182,210,224,1);
+background: -moz-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182,210,224,1)), color-stop(35%, rgba(131,184,219,1)), color-stop(65%, rgba(114,158,202,1)), color-stop(100%, rgba(120,189,235,1)));
+background: -webkit-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -o-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: -ms-linear-gradient(left, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+background: linear-gradient(to right, rgba(182,210,224,1) 0%, rgba(131,184,219,1) 35%, rgba(114,158,202,1) 65%, rgba(120,189,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6d2e0', endColorstr='#78bdeb', GradientType=1 );
+}
+.my-custom-scrollbarUsuarios::-webkit-scrollbar-track {
+    background: #ccdff0;
+    border-radius: 4px;
+}
+.my-custom-scrollbarUsuarios {
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+    display: block;
+}
+.tituloTabla{
+    background-color:#729ECA;
+    border-radius: 25px;
+    border-color: #729ECA;
+}
+
+/* CSS Modulo Entidades o Empresa */
+
+.contenedor_global_entidades{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_medio_entidades{
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contenedor_nueva_empresa{
+    width: 95%;
+    height: 40%;
+
+}
+.contenedor_empresas{
+    width: 95%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empresa{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor_historial2{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*  CSS TIKECT --------------------------------------------------------------------- */
+
+.contenedor_global_tikect{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.tikect{
+    width: 45%;
+    height: 70%;
+    background-image: url("../img/Tiquete.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+/* .tikect{
+    width: 60%;
+    height: 50%;
+    background-color: #729ECA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 3px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.info{
+    width: 60%;
+    height: 15%;
+    background-color: #729ECA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    
+} */
+.btnAceptarTurno{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS AJUSTAR HORA ------------------------------------------------------------------- */
+.contenedor_global_ajustarhora{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+.iconoservi2{
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/reloj.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+.ajustarhora{
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    justify-content: flex-start;
+}
+.inputhora{
+    margin-top: 30%;
+}
+.insertcedula{
+    margin: 0%;
+    padding: 0%;
+}
+
+@media screen and (max-height: 450px){
+    .contenedor_global_perfil{
+
+        height: 80vh;
+
+    }
+    .contenedor_imagen{
+        
+        width: 0%;
+        height: 0%;
+    }
+    .contenedor_img{
+        width: 0%;
+        height: 0vh;
+        background-image: none;
+        display: none;
+        background-size: 0%;
+    }
+    .imtem2Login2boton{
+        display: none;
+    
+    }
+    
+    .contenedor_perfil{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor_global_turno{
+        width: 100vw;
+        height: 90vh;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .contenedor_entidades{
+        width:70%;
+        height: 60%;
+        
+    }
+    .contenedor_historial2{
+        display: none;
+    }
+    .contenedor_empresas{
+        display: none;
+    }
+    h4{
+        margin: 0%;
+        padding: 0%;
+    }
+    h1{
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    h2{
+        margin: 0%;
+        padding: 0%;
+    }
+    p{
+        display: none;
+    }
+    .info{
+        width: 60%;
+        height: 5%;
+    }
+    .tikect{
+        width: 60%;
+        height: 65%;
+
+    }
+    .idimg{
+        display: none;
+    }
+    .insertcedula{
+        margin: 0%;
+        padding: 0%;
+    }
+    .ico{
+        display: none;
+    }
+    .iconoagenda{
+        display: none;
+    }
+}
